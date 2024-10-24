@@ -112,7 +112,7 @@ const pdfFiles = [
                 <h2 class="section-title">Éducation - Formations</h2>
                 <div class="content education">
                     {educationData.map((edu, index) => (
-                        <div class="education-item" key={index}>
+                        <div class="education-item">
                             <div class="education-header">
                                 <i class="fas fa-graduation-cap text-secondary"></i>
                                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" style="width: 1.5em; height: 1.5em; margin-right: 0.5rem; vertical-align: middle;">
@@ -135,7 +135,7 @@ const pdfFiles = [
 								 </div>
                                 <ul>
                                     {edu.description.map(item => (
-                                        <li key={item}>{item}</li>
+                                        <li>{item}</li>
                                     ))}
                                 </ul>
                             </div>
@@ -146,7 +146,7 @@ const pdfFiles = [
 									<div class="pdf-links">
 										<ul>
 											{edu.pdf.map(pdf => (
-												<li key={pdf.title}>
+												<li>
 													<a href={pdf.url} target="_blank" rel="noopener noreferrer" class="pdf-button">
 														Ouvrir {pdf.title}
 													</a>
@@ -170,7 +170,7 @@ const pdfFiles = [
   <h2 class="section-title">Expériences</h2>
   <div class="content">
     {experienceData.map((experience) => (
-      <div key={experience.title} class="experience-item">
+      <div class="experience-item">
         <div class="experience-header">
           <i class="fas fa-briefcase text-secondary"></i>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 1em; height: 1em; margin-right: 0.5rem; vertical-align: middle;">
@@ -193,7 +193,7 @@ const pdfFiles = [
           </div>
           <ul>
             {experience.description.map(item => (
-              <li key={item}>{item}</li>
+              <li>{item}</li>
             ))}
           </ul>
         </div>
